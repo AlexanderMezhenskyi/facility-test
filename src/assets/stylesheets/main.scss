@@ -1,6 +1,46 @@
 @import "_normalize.scss";
 @import "_variables.scss";
 
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamPro/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamPro/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamPro/GothamProRegular/GothamProRegular.woff") format("woff"),
+  url("../fonts/GothamPro/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamPro/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamPro/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamPro/GothamProBold/GothamProBold.woff") format("woff"),
+  url("../fonts/GothamPro/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProItalic";
+  src: url("../fonts/GothamPro/GothamProItalic/GothamProItalic.eot");
+  src: url("../fonts/GothamPro/GothamProItalic/GothamProItalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamPro/GothamProItalic/GothamProItalic.woff") format("woff"),
+  url("../fonts/GothamPro/GothamProItalic/GothamProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../fonts/GothamPro/GothamProBlack/GothamProBlack.eot");
+  src: url("../fonts/GothamPro/GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamPro/GothamProBlack/GothamProBlack.woff") format("woff"),
+  url("../fonts/GothamPro/GothamProBlack/GothamProBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 *,
 *:after,
 *:before {
@@ -16,5 +56,77 @@ html {
 
 body, html {
   min-height: 100%;
+}
+
+body {
+  color: $primaryColor;
+  font-family: $regularFontFamily;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ma-header {
+  padding-top: 15px;
+}
+.navbar {
+  border: none;
+  &__link {
+    &:before {
+      display: block;
+      background-color: #545ad8;
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 40px;
+      bottom: 10px;
+      height: 1px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: transform .2s ease-in, opacity .2s ease-in;
+    }
+    &:hover:before {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &:hover {
+      color: #545ad8;
+    }
+  }
+}
+
+.nav>li>a {
+  padding: 15px 12px;
+  &:hover {
+    color: #545ad8 !important;
+  }
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-brand {
+  padding: 0;
+  &__logo {
+    display: inline-block !important;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__title {
+    display: inline-block;
+    margin: 0 0 0 29px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.54px;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
