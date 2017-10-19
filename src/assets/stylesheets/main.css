@@ -406,24 +406,6 @@ body {
 
 .navbar {
   border: none; }
-  .navbar__link:before {
-    display: block;
-    background-color: #545ad8;
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    top: 40px;
-    bottom: 10px;
-    height: 1px;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: transform .2s ease-in, opacity .2s ease-in; }
-  .navbar__link:hover:before {
-    opacity: 1;
-    transform: translateY(0); }
-  .navbar__link:hover {
-    color: #545ad8; }
 
 .nav > li > a {
   padding: 15px 12px; }
@@ -443,6 +425,7 @@ body {
   .navbar-brand__title {
     display: inline-block;
     margin: 0 0 0 29px;
+    font-family: "GothamProBold", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 50px;
@@ -452,6 +435,83 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   border: none; }
+
+.ma-columns {
+  padding: 41px 0 0 0;
+  margin: 0 auto; }
+  .ma-columns__first-row {
+    margin-bottom: 67px; }
+  .ma-columns__title {
+    font-family: "GothamProBold", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    position: relative;
+    margin-bottom: 42px; }
+    .ma-columns__title:before {
+      display: block;
+      background-color: #646464;
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 4px;
+      left: 556px;
+      right: 0;
+      top: 28px; }
+  .ma-columns__subtitle {
+    font-family: "GothamProBold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.54px;
+    line-height: 30px;
+    margin-bottom: 35px; }
+  .ma-columns__text {
+    line-height: 24px; }
+
+.ma-article {
+  padding: 40px 0 85px; }
+  .ma-article__title {
+    font-family: "GothamProBold", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    position: relative;
+    margin-bottom: 92px; }
+    .ma-article__title:before {
+      display: block;
+      background-color: #646464;
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 4px;
+      left: 556px;
+      right: 0;
+      top: 28px; }
+  .ma-article__subtitle {
+    font-family: "GothamProBold", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    margin-bottom: 35px; }
+  .ma-article__text {
+    color: #000;
+    font-family: "GothamProRegular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    margin-bottom: 27px; }
+    .ma-article__text--bold {
+      font-family: "GothamProBold", sans-serif;
+      font-weight: 700; }
+    .ma-article__text--italic {
+      font-style: italic; }
+    .ma-article__text--underline {
+      text-decoration: underline; }
+  .ma-article__text-href {
+    color: #545ad8;
+    text-decoration: underline; }
+    .ma-article__text-href:hover {
+      color: #545ad8; }
 
 #map {
   width: 100%;

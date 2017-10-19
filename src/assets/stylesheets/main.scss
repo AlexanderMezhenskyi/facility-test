@@ -70,29 +70,6 @@ body {
 }
 .navbar {
   border: none;
-  &__link {
-    &:before {
-      display: block;
-      background-color: #545ad8;
-      position: absolute;
-      content: "";
-      left: 0;
-      right: 0;
-      top: 40px;
-      bottom: 10px;
-      height: 1px;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: transform .2s ease-in, opacity .2s ease-in;
-    }
-    &:hover:before {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    &:hover {
-      color: #545ad8;
-    }
-  }
 }
 
 .nav>li>a {
@@ -118,6 +95,7 @@ body {
   &__title {
     display: inline-block;
     margin: 0 0 0 29px;
+    font-family: $boldFontFamily;
     font-size: 18px;
     font-weight: 700;
     line-height: 50px;
@@ -130,6 +108,110 @@ body {
   padding-left: 15px;
   border: none;
 }
+
+
+
+.ma-columns {
+  padding:41px 0 0 0;
+  margin: 0 auto;
+  &__first-row {
+    margin-bottom: 67px;
+  }
+  &__title {
+    font-family: $boldFontFamily;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    position: relative;
+    margin-bottom: 42px;
+    &:before {
+      display: block;
+      background-color: $primaryColor;
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 4px;
+      left: 556px;
+      right: 0;
+      top: 28px;
+    }
+  }
+  &__subtitle {
+    font-family: $boldFontFamily;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.54px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+  &__text {
+    line-height: 24px;
+  }
+}
+
+.ma-article {
+  padding: 40px 0 85px;
+  &__title {
+    font-family: $boldFontFamily;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    position: relative;
+    margin-bottom: 92px;
+    &:before {
+      display: block;
+      background-color: $primaryColor;
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 4px;
+      left: 556px;
+      right: 0;
+      top: 28px;
+    }
+  }
+  &__subtitle {
+    font-family: $boldFontFamily;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    margin-bottom: 35px;
+  }
+  &__text {
+    color: #000;
+    font-family:$regularFontFamily;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    margin-bottom: 27px;
+    &--bold {
+      font-family: $boldFontFamily;
+      font-weight: 700;
+    }
+    &--italic {
+      font-style: italic;
+    }
+    &--underline {
+      text-decoration: underline;
+    }
+  }
+  &__text-href {
+    color: #545ad8;
+    text-decoration: underline;
+    &:hover {
+      color: #545ad8;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
