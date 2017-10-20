@@ -661,3 +661,26 @@ body {
 #map {
   width: 100%;
   height: 600px; }
+
+@media (max-width: 1024px) {
+  .ma-full-slider__text {
+    margin-bottom: 25px; }
+  .ma-mini-slider .slick-prev {
+    left: 365px;
+    top: 180px; }
+  .ma-mini-slider .slick-next {
+    right: 400px;
+    top: 180px; }
+  .ma-mini-slider__title:before {
+    display: none; }
+  .ma-columns__title:before {
+    display: none; }
+  .ma-article__title:before {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .navbar-brand__title {
+    display: none; }
+  #full-slider,
+  #mini-slider {
+    display: none; } }
