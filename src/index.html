@@ -7,6 +7,8 @@
 	<title>Facility</title>
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 	<link href="lib/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="lib/slick.css">
+	<link rel="stylesheet" href="lib/slick-theme.css">
 	<link href="assets/stylesheets/main.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -34,19 +36,21 @@
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li
-								class="navbar__item"><a class="navbar__link text-uppercase" href="#full-slider">full
-							slider</a></li>
-						<li class="navbar__item"><a class="navbar__link navbar__link--font text-uppercase"
-													href="#mini-slider">mini
-							slider</a></li>
-						<li class="navbar__item"><a class="navbar__link navbar__link--font text-uppercase"
-													href="#columns">columns</a>
+						<li class="navbar__item">
+							<a class="navbar__link text-uppercase" href="#full-slider">full slider</a>
 						</li>
-						<li class="navbar__item"><a class="navbar__link navbar__link--font text-uppercase"
-													href="#article">article</a>
+						<li class="navbar__item">
+							<a class="navbar__link navbar__link--font text-uppercase" href="#mini-slider">mini
+								slider</a>
 						</li>
-						<li class="navbar__item"><a class="navbar__link navbar__link--font text-uppercase" href="#map">map</a>
+						<li class="navbar__item">
+							<a class="navbar__link navbar__link--font text-uppercase" href="#columns">columns</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link navbar__link--font text-uppercase" href="#article">article</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link navbar__link--font text-uppercase" href="#map">map</a>
 						</li>
 					</ul>
 				</div>
@@ -55,6 +59,120 @@
 	</div>
 </header>
 <main>
+	<section id="full-slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-lg-offset-4">
+					<div class="ma-full-slider__banner">
+						<div class="row ">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+								<h1 class="ma-full-slider__title text-uppercase text-center">
+									full slider
+								</h1>
+							</div>
+						</div>
+						<div class="row ">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<p class="ma-full-slider__text text-uppercase text-center">
+									Lorem ipsum dolor sit amet, consectetur<br>
+									adipisicing elit. Alias at consectetur cumque<br>
+									dignissimos, dolorem doloremque dolores<br>
+									eaque incidunt itaque libero maiores, minima<br>
+									minus necessitatibus nesciunt nostrum<br>
+									pariatur, quidem vero vitae. 
+								</p>
+							</div>
+						</div>
+						<div class="row ">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-lg-offset-3">
+								<a href="#myModal" class="ma-full-slider__btn text-uppercase text-center"
+								   data-toggle="modal">popup</a>
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											</div>
+											<div class="modal-body">
+												This is popup
+											</div>
+											<div class="modal-footer ">
+												<a href="#" class="modal-footer-btn text-uppercase text-uppercase center-block"
+												   data-dismiss="modal">Close</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="ma-full-slider">
+					<div class="ma-full-slider__item">
+						<img class="ma-full-slider__img img-responsive" src="assets/img/slider.jpg" alt="slider-img">
+					</div>
+					<div class="ma-full-slider__item">
+						<img class="ma-full-slider__img img-responsive" src="assets/img/slider2.jpg" alt="slider-img">
+					</div>
+					<div class="ma-full-slider__item">
+						<img class="ma-full-slider__img img-responsive" src="assets/img/slider3.jpg" alt="slider-img">
+					</div>
+					<div class="ma-full-slider__item">
+						<img class="ma-full-slider__img img-responsive" src="assets/img/slider.jpg" alt="slider-img">
+					</div>
+					<div class="ma-full-slider__item">
+						<img class="ma-full-slider__img img-responsive" src="assets/img/slider2.jpg" alt="slider-img">
+					</div>
+					<div class="ma-full-slider__item">
+						<img class="ma-full-slider__img img-responsive" src="assets/img/slider3.jpg" alt="slider-img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="mini-slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+					<h3 class="text-uppercase text-center ma-mini-slider__title">mini slider</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-lg-offset-1">
+					<div class="ma-mini-slider">
+						<div class=" ma-mini-slider__item">
+							<img class="ma-mini-slider__img img-responsive" src="assets/img/slider.jpg"
+								 alt="slider-img">
+						</div>
+						<div class=" ma-mini-slider__item">
+							<img class="ma-mini-slider__img img-responsive" src="assets/img/slider2.jpg"
+								 alt="slider-img">
+						</div>
+						<div class=" ma-mini-slider__item">
+							<img class="ma-mini-slider__img img-responsive" src="assets/img/slider3.jpg"
+								 alt="slider-img">
+						</div>
+						<div class=" ma-mini-slider__item">
+							<img class="ma-mini-slider__img img-responsive" src="assets/img/slider.jpg"
+								 alt="slider-img">
+						</div>
+						<div class="ma-mini-slider__item">
+							<img class="ma-mini-slider__img img-responsive" src="assets/img/slider2.jpg"
+								 alt="slider-img">
+						</div>
+						<div class=" ma-mini-slider__item">
+							<img class="ma-mini-slider__img img-responsive" src="assets/img/slider3.jpg"
+								 alt="slider-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 	<section id="columns" class="ma-columns">
 		<div class="container">
 			<div class="row">
@@ -174,12 +292,16 @@
 		</div>
 	</section>
 
-		<div id="map"></div>
+	<div id="map"></div>
 </main>
 <script src="lib/jquery.min.js"></script>
 <script src="lib/js/bootstrap.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtz4HPqMUXCYdFMWAYrpYoD4OXBijWwFY&callback=initMap"
 		async defer></script>
+<script src="lib/slick.min.js"></script>
 <script src="assets/scripts/map.js"></script>
+<script src="assets/scripts/slider.js"></script>
+<script src="assets/scripts/scroll.js"></script>
+<script src="assets/scripts/modal.js"></script>
 </body>
 </html>
